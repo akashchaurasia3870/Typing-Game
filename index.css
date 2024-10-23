@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    background: rgb(29, 115, 243);
+}
+
+.heading{
+    padding: 10px 15px;
+    background:#fff;
+    border-radius: 10px;
+    /* width: 100%; */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.wrapper{
+    /* width: 770px; */
+    padding: 35px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper .content-box{
+    padding: 12px 20px;
+    border-radius: 10px;
+    border-top: 1px solid #bfbfbf;
+}
+
+.wrapper .input-field{
+    padding: 13px 20px 0;
+    position: absolute;
+    opacity: 0;
+    z-index: -99;
+}
+
+.wrapper .content{
+    margin-top: 17px;
+    display: flex;
+    padding: 12px 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #bfbfbf;
+}
+
+.content-box .result-detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content-box .result-detail .result-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;;
+}
+
+.result-details ul{
+    background: #000;
+}
+
+.result-details li{
+    display: flex;
+    height: 20px;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    /* background-color: red; */
+}
+
+.content button{
+    width: 105px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: rgb(29, 115, 243);
+    padding: 8px 0;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    margin-left: 30px;
+
+}
+
+
+.content button:active{
+    transform: scale(0.97);
+}
+
+.typing-text p span{
+    position: relative;
+
+}
+
+.typing-text p span.active{
+color: rgb(29, 115, 243);
+}
+
+.typing-text p span.correct{
+    color: rgb(14, 236, 14);
+}
+
+.typing-text p span.incorrect{
+    color: rgb(249, 73, 3);
+    background-color: #ffc0cb;
+    border-radius: 1px;
+}
+
+::selection{
+    color: #fff;
+    background: red;
+}
