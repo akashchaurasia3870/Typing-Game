@@ -20,7 +20,7 @@ This project is a **Typing Speed Test** application designed to help users measu
 *Example 2*
 
 ![Typing Game Result](./img/img3.png)  
-*Example 2*
+*Example 3*
 
 ## 🛠️ Technologies Used
 
